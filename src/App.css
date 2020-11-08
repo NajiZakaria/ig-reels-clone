@@ -1,0 +1,45 @@
+html{
+    scroll-snap-type: y mandatory;
+}
+
+.app{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+.app__top{
+    margin-bottom: -100px;
+}
+
+.app__top > h2{
+    text-align: center;
+    color: white;
+}
+
+.app__top > img {
+    width: 80px;
+    height: 80px;
+}
+
+.app__videos{
+    position: relative;
+    height: 70vh;
+    background-color: white;
+    width: 70%;
+    border-radius:20px;
+    max-width: 310px;
+    max-height: 1200px;
+    overflow: scroll;
+    scroll-snap-type:y mandatory;
+}
+
+.app__videos::-webkit-scrollbar{
+    display: none;
+}
+
+.app__videos{
+    -ms-overflow-style :none;
+    scrollbar-width:none
+}
